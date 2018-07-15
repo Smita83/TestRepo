@@ -4,5 +4,5 @@ Smita Testing
 
 Finger crossed
 Trial
-rest
+resting
 
