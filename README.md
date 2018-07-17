@@ -1,7 +1,4 @@
 # TestRepo
-testing done
-Smita Testing
-
-Finger crossed
+TestRepo Testing
 Testing for jenkins new Pull request
 
