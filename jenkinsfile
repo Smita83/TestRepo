@@ -1,19 +1,14 @@
 pipeline {
-d  stages {
+ stages {
     stage('build') {
       steps {
-        sh 'pip install -r requirements.txt'
+        echo 'Building...'
       }
     }
     stage('test') {
       steps {
-        sh 'python test.py'
+        echo 'testing...'
       }
-      post {
-        always {
-          junit 'test-reports/*.xml'
-        }
-      }    
     }
   }
-}d
+}
