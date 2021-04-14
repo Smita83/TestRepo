@@ -1,9 +1,12 @@
 pipeline {
  agent any
+ environment {
+    PATH = "C:/RF-Git/TestRepo"
+  }
  stages {
     stage('build') {
       steps {
-	    echo "Running ${env.BUILD_ID} on ${env.WORKSPACE}"
+	    echo "Running ${env.BUILD_ID} on ${env.WORKSPACE} on ${env.PATH}"
         echo 'Building...'
       }
     }
