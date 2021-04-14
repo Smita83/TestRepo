@@ -3,13 +3,14 @@ pipeline {
  stages {
     stage('build') {
       steps {
+	    echo "Running ${env.BUILD_ID} on ${env.WORKSPACE}"
         echo 'Building...'
       }
     }
     stage('test') {
       steps {
         echo 'testing...'
-		echo '${env.WORKSPACE}'
+		
       }
     }
   }
