@@ -9,7 +9,7 @@ pipeline {
     stage('test') {
       steps {
         echo 'testing...'
-		echo ${env.WORKSPACE}
+		echo '${env.WORKSPACE}'
       }
     }
   }
