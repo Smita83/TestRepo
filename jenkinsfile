@@ -7,7 +7,7 @@ pipeline {
     stage('build') {
       steps {
 	    echo "Running ${env.BUILD_ID} on ${env.WORKSPACE} on ${env.PATH}"
-        echo 'Building...'
+        sh "ls -la ${env.WORKSPACE}"
       }
     }
     stage('test') {
