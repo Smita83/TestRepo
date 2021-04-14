@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'testing...'
 		echo $workspace
-		sh 'python test.py'
+		
       }
     }
   }
