@@ -1,8 +1,5 @@
 pipeline {
  agent any
- environment {
-    PATH = "C:/RF-Git/TestRepo"
-  }
  stages {
     stage('build') {
       steps {
