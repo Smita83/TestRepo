@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
 	    echo "Running ${env.BUILD_ID} on ${env.WORKSPACE} on ${env.PATH}"
+		echo 'export PYTHONPATH=/usr/lib/python2.7/site-packages'
         sh "ls -la ${env.WORKSPACE}"
       }
     }
